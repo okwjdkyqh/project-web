@@ -2,13 +2,6 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <title>паспорт, задание</title>
-</head>
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
@@ -96,18 +89,6 @@
             width: 10px;
             height: 10px;
         }
-
-        .more-link {
-            display: inline-block;
-            padding: 6px 10px;
-            text-decoration: none;
-            border-radius: 6px;
-            background: rgba(247, 246, 235, 0.12);
-            color: #214;
-            border: 1px solid rgba(0, 0, 0, 0.08);
-            color:#1e1d19;
-            }
-
     </style>
 </head>
 
@@ -118,7 +99,7 @@
         </h1>
         <nav>
             <a href="index.html">начальная страница</a> |
-            <a href="general.html">общая информация</a> |
+            <a href="#head1">общая информация</a> |
             <a href="https://ru.wikipedia.org/wiki/Коза" target="_blank">что такое коза?</a>
         </nav>
         <nav style="font-size: 77%; margin-top: 10px;">
@@ -128,7 +109,9 @@
         </nav>
     </header>
 
-    <h4 align="center"><span id='country'>Российская Федерация</span></h4>
+    <h2 id="translateee" style="cursor:pointer">to translate passport information, click here | чтобы перевести паспорт, нажмите здесь</h2>
+
+    <body><h4 align="center"><span id='country'>Российская Федерация</span></h4>
 
     <p align="center">Паспорт выдан: <span id='MVD'>ГУ МВД РОССИИ ПО Г. МОСКВЕ</span></p>
 
@@ -160,13 +143,6 @@
             <td align="left">Место рождения: <span id='birth_place'>г. Москва</span></td>
         </tr>
     </table>
-
-    <p align="center">
-        <a href="images/DOM_JS. Считываем информацию из DOM.png" target="_blank" class="more-link" >
-            задание с поиском
-        </a> &emsp;&emsp;&emsp; | &emsp;&emsp;&emsp; <a href="engpass.html" target="_blank" class="more-link"> english passport</a>
-    </p>
-
 </body>
 
-</html>
+<script src="script.js"></script>
