@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>паспорт, задание</title>
+</head>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Козочки — Главная страница</title>
+    <style>
+        body {
+            font-family: "Raleway", sans-serif;
+            line-height: 1.5;
+            background-color: #fffdf6;
+            margin: 0;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #b3cb52;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #3e3e2e;
+            font-weight: bold;
+        }
+
+        nav a.current {
+            color: #fffdf6;
+            text-decoration: underline;
+        }
+
+        .right-links {
+            position: fixed;
+            top: 20px;
+            right: 40px;
+        }
+
+        .right-links a {
+            display: block;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: #43423d;
+            font-weight: bold;
+        }
+
+        h3 {
+            color: rgb(240, 115, 32);
+            border-bottom: 1px solid #ccc;
+        }
+
+        .to-top {
+            text-align: right;
+            margin-bottom: 10px;
+            color: #3e3e2e
+        }
+
+        .album {
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .album img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: transform 0.2s;
+        }
+
+        .album img:hover {
+            transform: scale(1.1);
+        }
+
+        .small-img {
+            width: 10px;
+            height: 10px;
+        }
+    </style>
+</head>
+
+<body id="top">
+    <header>
+        <h1 style="font-family: 'Barriecito', system-ui;
+            color: #f9f7ea; font-size: 100px;"> WONDERS OF GOATS
+        </h1>
+        <nav>
+            <a href="index.html">начальная страница</a> |
+            <a href="#head1">общая информация</a> |
+            <a href="https://ru.wikipedia.org/wiki/Коза" target="_blank">что такое коза?</a>
+        </nav>
+        <nav style="font-size: 77%; margin-top: 10px;">
+            <a href="solution.html">решение задачи</a> |
+            <a href="passport.html" class="current">паспорт</a> |
+            <a href="tell.html">расскажи про козу</a>
+        </nav>
+    </header>
+
+    <h3 align="center"><span id='country'>Российская Федерация</span></h3>
+
+    <p align="center">Паспорт выдан: <span id='MVD'>ГУ МВД РОССИИ ПО Г. МОСКВЕ</span></p>
+
+    <p align="center">Дата выдачи: <span id='Date'>12.06.2021</span>&emsp;&emsp;&emsp;&emsp; Код подразделения: <span
+            id='Kode'>770-102</span></p>
+
+    <p style='line-height: 3; text-align: center;'>
+        <img alt='Подпись' src="images/photo_5210854615472082095_y.jpg" width="500" height="130">
+    </p>
+
+    <table align='center' cellspacing="0" cellpadding="10" border="0" width="600px">
+        <tr>
+            <td rowspan="5" height="20px">
+                <img alt='Фото' src="images/ь.jpg" width="150" height="180">
+            </td>
+            <td align="left" height="20px">Фамилия: <span id="surname">Раймова</span></td>
+        </tr>
+        <tr>
+            <td align="left">Имя: <span id="name">Полина</span></td>
+        </tr>
+        <tr>
+            <td align="left">Отчество: <span id="dad_name">Владимировна</span></td>
+        </tr>
+        <tr>
+            <td align="left">Пол: <span id='sex'>ж</span>&emsp;&emsp;&emsp;&emsp; Дата рождения: <span
+                    id="birth_date">01.09.2006</span></td>
+        </tr>
+        <tr>
+            <td align="left">Место рождения: <span id='birth_place'>г. Москва</span></td>
+        </tr>
+    </table>
+
+    <p align="center">
+        <a href="ляляля.png" target="_blank">
+            считать текст
+        </a>
+    </p>
+
+</body>
+
+</html>
