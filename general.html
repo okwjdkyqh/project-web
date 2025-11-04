@@ -126,7 +126,7 @@
         </div>
 
         <section id="part1">
-            <h3>раздел 1: козы и человек</h3>
+            <h3>раздел 1: козы и человек. таблица коз</h3>
             <p>Молоко коз полезно и гипоаллергенно.</p>
             <p>Коза — животное, которое издавна жило рядом с человеком. Её образ пронизывает язык, фольклор, музыку и даже юмор. От
             древних ритуалов до мемов — коза умеет быть кем угодно: капризной красавицей, добродушной тётушкой или дерзким символом
@@ -142,6 +142,85 @@
             образ лёгкости и ритма повседневной жизни. “Minha cabra dança sob o sol” — «моя коза танцует под солнцем». Казалось бы, шутка, а ведь за ней — то
             самое простое счастье, которое коза всегда умела хранить.</p>
             <div class="to-top"><a href="#top">в начало ↑</a></div>
+        <style>
+            .photo-table {
+                width: 100%;
+                max-width: 800px;
+                border-collapse: collapse;
+                margin: 20px auto;
+                background-image: url('images/table_bg.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: relative;
+                color: #222;
+            }
+
+            .photo-table td,
+            .photo-table th {
+                padding: 12px;
+                border: 1px solid rgba(0, 0, 0, 0.15);
+                background-color: rgba(255, 255, 255, 0.75);
+                vertical-align: top;
+            }
+
+            .cell-image img {
+                display: block;
+                width: 180px;
+                height: auto;
+                border-radius: 6px;
+            }
+
+            .btn-link {
+                display: inline-block;
+                padding: 6px 10px;
+                text-decoration: none;
+                border-radius: 6px;
+                background: rgba(60, 120, 60, 0.12);
+                color: #214;
+                border: 1px solid rgba(0, 0, 0, 0.08);
+            }
+        </style>
+
+        <table class="photo-table" aria-label="nаблица про козочек">
+            <thead>
+                <tr>
+                    <th>Порода</th>
+                    <th>Фото</th>
+                    <th>Описание и ссылка</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>коза альпийская</td>
+
+                    <td class="cell-image">
+                        <img src="images/goat_cell.jpg" alt="Коза альпийская" />
+                    </td>
+
+                    <td>
+                        короткое описание — спокойная порода, подходит для маленьких хозяйств.<br><br>
+
+                        <a href="images/goat_cell_large.jpg" target="_blank" class="btn-link" rel="noopener noreferrer">
+                            рассмотреть поближе                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>коза местная</td>
+                    <td class="cell-image">
+                        <img src="images/goat2_cell.jpg" alt="Местная коза" />
+                    </td>
+                    <td>
+                        люди любят её за характер и молоко.<br><br>
+                        <a href="https://ru.wikipedia.org/wiki/Коза" target="_blank" class="btn-link" rel="noopener noreferrer">
+                            статья о козах (Вики)
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
         </section>
 
         <section id="part2">
