@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Козочки — Главная страница</title>
+    <style>
+        body {
+            font-family: "Raleway", sans-serif;
+            line-height: 1.5;
+            background-color: #fffdf6;
+            margin: 0;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #b3cb52;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #3e3e2e;
+            font-weight: bold;
+        }
+
+        nav a.current {
+            color: #fffdf6;
+            text-decoration: underline;
+        }
+
+        .right-links {
+            position: fixed;
+            top: 20px;
+            right: 40px;
+        }
+
+        .right-links a {
+            display: block;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: #43423d;
+            font-weight: bold;
+        }
+
+        h3 {
+            color: rgb(240, 115, 32);
+            border-bottom: 1px solid #ccc;
+        }
+
+        .to-top {
+            text-align: right;
+            margin-bottom: 10px;
+            color: #3e3e2e
+        }
+
+        .album {
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .album img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: transform 0.2s;
+        }
+
+        .album img:hover {
+            transform: scale(1.1);
+        }
+
+        .small-img {
+            width: 10px;
+            height: 10px;
+        }
+    </style>
+</head>
+
+<body id="top">
+    <header>
+        <h1 style="font-family: 'Barriecito', system-ui;
+            color: #f9f7ea; font-size: 100px;"> WONDERS OF GOATS
+        </h1>
+        <nav>
+            <a href="index.html">начальная страница</a> |
+            <a href="#head1" class="current">общая информация</a> |
+            <a href="https://ru.wikipedia.org/wiki/Коза" target="_blank">что такое коза?</a>
+        </nav>
+        <nav style="font-size: 77%; margin-top: 10px;">
+            <a href="solution.html">решение задачи</a> |
+            <a href="passportnoth.html">паспорт</a> |
+            <a href="tell.html">расскажи про козу</a>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+<h3>форма для фермеров и зоопарков: расскажи о своей козочке </h3>
+
+<form action="https://faaake.com/submit" method="post">
+
+
+    <fieldset style="border:1px solid #ccc; padding:10px; border-radius:8px;">
+        <legend>контактные данные владельца</legend>
+
+        <label>фамилия: <input type="text" name="surname" required></label><br><br>
+        <label>имя: <input type="text" name="name" required></label><br><br>
+        <label>группа (или организация): <input type="text" name="group"></label><br><br>
+        <label>мобильный телефон: <input type="text" name="phone"></label><br><br>
+        <label>электронная почта: <input type="text" name="email"></label><br><br>
+        <label>дата: <input type="date" name="send_date"></label><br><br>
+    </fieldset>
+
+    <br>
+
+    <fieldset style="border:1px solid #ccc; padding:10px; border-radius:8px;">
+        <legend>о вашей козе</legend>
+
+        <label>имя козы: <input type="text" name="goat_name" required></label><br><br>
+        <label>возраст (в годах): <input type="number" name="age" min="0" max="20"></label><br><br>
+
+        <p>Порода:</p>
+        <input type="radio" name="breed" value="альпийская"> альпийская <br>
+        <input type="radio" name="breed" value="местная"> местная <br>
+        <input type="radio" name="breed" value="другая"> другая <br><br>
+
+        <p>что вы получаете от козы?</p>
+        <input type="checkbox" name="products" value="молоко"> молоко <br>
+        <input type="checkbox" name="products" value="сыр"> сыр <br>
+        <input type="checkbox" name="products" value="шерсть"> шерсть <br>
+        <input type="checkbox" name="products" value="радость"> просто радость <br><br>
+
+        <label>любимая история о вашей козе:<br>
+            <textarea name="story" rows="4" cols="50"
+                placeholder="расскажите, что делает вашу козу особенной для вас?"></textarea>
+        </label><br><br>
+
+        <label>пароль от вашей фермы:
+            <input type="password" name="edit_password">
+        </label><br><br>
+
+        <input type="hidden" name="topic" value="goats_form"> <!-- скрытое поле -->
+
+        <input type="submit" value="отправить рассказ">
+        <input type="reset" value="нет">
+    </fieldset>
+</form>
