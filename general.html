@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <title>Козочки — Главная страница</title>
+    <title>все про козочек</title>
     <style>
         body {
             font-family: "Raleway", sans-serif;
@@ -24,6 +24,7 @@
             background-color: #b3cb52;
             padding: 10px;
             text-align: center;
+            border-radius: 20px;
         }
 
         nav {
@@ -88,6 +89,36 @@
         .small-img {
             width: 10px;
             height: 10px;
+        }
+
+        .img-con:hover {
+            animation: Spinner 3s;
+
+        }
+
+        .img-con {
+            display: block;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: #43423d;
+            font-weight: bold;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+        }
+
+
+
+        @keyframes Spinner {
+            from {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(45deg)
+            }
+            to {
+                transform: rotate(360deg)
+            }
         }
     </style>
 </head>
@@ -266,8 +297,12 @@
             <img src="images/скачет.jpg" width="80" height="80" alt="козленок">
         </a>
 
-
+<p class="img-con">
+    <img alt='коза крутится' src="images/ggggg.png" height="175" width="175">
+</p>
     </main>
 </body>
+
+
 
 </html>

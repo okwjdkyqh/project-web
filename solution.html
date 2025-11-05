@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>задачка</title>
+    <style>
+        body {
+            font-family: "Raleway", sans-serif;
+            line-height: 1.5;
+            background-color: #fffdf6;
+            margin: 0;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #b3cb52;
+            padding: 10px;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        nav {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #3e3e2e;
+            font-weight: bold;
+        }
+
+        nav a.current {
+            color: #fffdf6;
+            text-decoration: underline;
+        }
+
+        .right-links {
+            position: fixed;
+            top: 20px;
+            right: 40px;
+        }
+
+        .right-links a {
+            display: block;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: #43423d;
+            font-weight: bold;
+        }
+
+        h3 {
+            color: rgb(240, 115, 32);
+            border-bottom: 1px solid #ccc;
+        }
+
+        .to-top {
+            text-align: right;
+            margin-bottom: 10px;
+            color: #3e3e2e
+        }
+
+        .album {
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .album img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: transform 0.2s;
+        }
+
+        .album img:hover {
+            transform: scale(1.1);
+        }
+
+        .small-img {
+            width: 10px;
+            height: 10px;
+        }
+
+        .img-con:hover {
+            animation: Spinner 3s;
+
+        }
+
+        .img-con {
+            display: block;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: #43423d;
+            font-weight: bold;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+        }
+
+
+
+        @keyframes Spinner {
+            from {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(45deg)
+            }
+
+            to {
+                transform: rotate(360deg)
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+    <header>
+        <h1 style="font-family: 'Barriecito', system-ui;
+            color: #f9f7ea; font-size: 100px;"> WONDERS OF GOATS
+        </h1>
+        <nav>
+            <a href="index.html">начальная страница</a> |
+            <a href="general.html">общая информация</a> |
+            <a href="https://ru.wikipedia.org/wiki/Коза" target="_blank">что такое коза?</a>
+        </nav>
+        <nav style="font-size: 77%; margin-top: 10px;">
+            <a href="solution.html" class="current">решение задачи</a> |
+            <a href="passport.html">паспорт</a> |
+            <a href="tell.html">расскажи про козу</a>
+        </nav>
+    </header>
+
+
+        <h2 style="color:#b3cb52">плацкартное место</h2>
+
+        <input type="number" id="seat" placeholder="введите номер места (от 1 до 54)">
+        <button id="checkBtn">проверим?</button>
+
+        <p id="result"></p>
+
+        <script src="script2.js"></script>
+
+        <p text-align: center;'>
+            <img alt='Подпись' src="images/коза кондуктор.png" height="325" width="300">
+        </p>
+    </body>
+
+    </html>
+
+

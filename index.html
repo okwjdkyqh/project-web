@@ -122,13 +122,27 @@
                 transform: rotate(360deg)
             }
         }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0,1);
+                opacity: 0;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1
+            }
+        }
+        
+
     </style>
 </head>
 
 <body id="top">
     <header>
         <h1 style="font-family: 'Barriecito', system-ui;
-            color: #f9f7ea; font-size: 100px; font-weight: bold; animation: zoomIn 1s cubic-bezier(0.445, 0.05, 0.55, 0.95)"> WONDERS OF GOATS
+            color: #f9f7ea; font-size: 100px; animation: zoomIn 1s cubic-bezier(1, 0.01, 0, 0.99)"> WONDERS OF GOATS
         </h1>
         <nav>
             <a href="index.html" class="current">начальная страница</a> |
@@ -144,7 +158,7 @@
 
     <main>
         <h2 style="color:#b3cb52">мир коз</h2>
-        <p>Козы ассоциируются с большим количеством вещей у людей. Неудивительно, ведь козы были приручены людьми
+        <p >Козы ассоциируются с большим количеством вещей у людей. Неудивительно, ведь козы были приручены людьми
             порядка 11 тысячи лет назад. За время, проведенное рядом с ними, мы узнали о таких их качествах, как
             драчливость, своенравие, прыгучесть, ловкость и любопытство. Они проказливы и милы. Что связывает нас с
             козами, за что их можно полюбить, что мы о них узнаем? </p>
